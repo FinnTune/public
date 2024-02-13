@@ -6,7 +6,7 @@ The computer can choose its own IP address (static) or can ask a DHCP server to 
 
 Generally, clients (smartphones, laptops, etc...) rely on DHCP servers to have a dynamic IP address and servers have a static IP address.
 
-For this project you will need to add these 3 VM :
+For this project you will need to add these 3 VMs:
 
 ### For VirtualBox 
 
@@ -20,7 +20,9 @@ For this project you will need to add these 3 VM :
 - [01_connect_machine1](https://assets.01-edu.org/sys/01_connect_machine1.utm.zip)
 - [01_connect_machine2](https://assets.01-edu.org/sys/01_connect_machine2.utm.zip)
 
-The VM are configured like this :
+
+
+The VMs are configured like this :
 
 ```
         N E T W O R K S                C O M P U T E R S
@@ -61,13 +63,13 @@ _______________________________     ________________________
 '-----------------------------'     '----------------------'
 ```
 
-You will only have control over "machine2". This computer have Internet access through the "box".
+You will only have control over "machine2". This computer has Internet access through the "box".
 
 Machine Credentials: Use 'root' as the login and a single space (' ') as the password.
 
 Configure the network of the connect_box to use the NAT network, following the diagram provided above.
 
-Start the 3 VM and test on machine2 the connectivity quality with this command :
+Start the 3 VMs and test the machine2 connectivity quality with this command :
 
 ```
 timeout --signal SIGINT 1m ping google.com
